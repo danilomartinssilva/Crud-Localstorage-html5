@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Teste CI&T</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Teste CI&T</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container text-center">
+      <h2>Cadastro de Alunos</h1>
+        <form id="frmCadastro" class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="txtID">ID</label>
+            <input type="text" class="form-control numero" id="txtID" placeholder="ID do Aluno">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="text" class="form-control nome" id="txtNome" placeholder="Nome do Aluno">
+          </div>
+          <button type="submit" id="btnSalvar" class="btn btn-success">Salvar</button>
+        </form>
+      </div> <!-- container -->
+    </div> <!-- jumbotron -->
+
+    <div class="container">
+      <div class="row">
+      <h2>Listagem de Alunos</h1>
+        <table id="tblListar" class="table table-striped">
+        </table>
+      </div>
+    </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
