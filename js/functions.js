@@ -56,7 +56,7 @@ function Listar(){
         );
     for(var i in tbAlunos){
         var alu= JSON.parse(tbAlunos[i]);
-        $("#tblListar tbody").append("<tr><th scope='row'><button type='button' class='btn btn-primary btnEditar' alt='"+i+"'>Editar</button><th scope='row'><button type='button' class='btn btn-danger btnExcluir' alt='"+i+"'>Excluir</button><td>"+alu.idAluno+"</td><td>"+alu.Nome+"</td></tr>");
+        $("#tblListar tbody").append("<tr><th scope='row' class='col-xs-1'><button type='button' class='btn btn-primary btnEditar' alt='"+i+"'>Editar</button><th scope='row' class='col-xs-1'><button type='button' class='btn btn-danger btnExcluir' alt='"+i+"'>Excluir</button><td class='col-xs-5'>"+alu.idAluno+"</td><td class='col-xs-5'>"+alu.Nome+"</td></tr>");
     }
 }
 
